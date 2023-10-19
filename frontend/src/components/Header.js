@@ -1,10 +1,16 @@
 import React from 'react'; 
-import { Navbar } from 'react-bootstrap'
+import { Navbar, Container } from 'react-bootstrap'
+
+const navbarStlyle = {
+    backgroundColor: 'lightblue'
+}
 
 const Header = (props) => {
     return (
-        <Navbar bg="light" data-bs-theme="light">
-            <Navbar.Brand href="/">{props.title}</Navbar.Brand>
+        <Navbar style={navbarStlyle} data-bs-theme="light">
+            <Container>
+                <Navbar.Brand href="/">{props.title}</Navbar.Brand>
+            </Container>
         </Navbar>
            )
 };
